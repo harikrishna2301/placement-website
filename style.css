@@ -1,0 +1,77 @@
+body{
+    margin: 0px 0px 0px 0px;
+    background-color: #ECEEDF;
+}
+#title{
+    display: flex;
+    background-color: #BBDCE5;
+}
+#x{
+    margin-right: 430px;
+}
+.option{
+    text-decoration: none;
+    margin-top: 7px;
+    display: flex;
+    margin-left: 22%;
+    font-size: larger;
+    color: white;
+}
+#bar{
+    width: auto;
+    display: flex;
+    position: sticky; 
+    top: 0;
+    height: 40px;
+    background-color: #333;
+}
+marquee{
+    margin-top: 10%;
+}
+.cmp{
+    margin-left: 30%;
+}
+#companies{
+    margin-top: 25%;
+}
+#footer{
+    height: 450px;
+    background-color: #0c2b57;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about{
+    padding-right: 100px;
+    padding-left: 100px;
+    
+}
+p{
+    font-size: medium;
+}
+.mail-link:hover{
+  color: #ff6600;           /* Color when hovered */
+  text-decoration: underline;
+}
+.mail-link{
+  color: yellowgreen;
+}
+.mail:hover{
+    color:gold;
+}
+/* .footer1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: right;
+  background-color: #0c2b57;
+  display: flex;
+  text-align: center;
+  gap: 400px;
+  flex-wrap: nowrap;
+  height: 200px;
+} */
+/* .bottom {
+  margin-left: 600px;
+  display: flex;
+  align-items: center;
+
