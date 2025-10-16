@@ -17,6 +17,13 @@ body{
     font-size: larger;
     color: white;
 }
+@media(max-width:600px){
+    h1{
+        font-size:1.5rem;
+    }
+    .navbar{
+        flex-direction:coloumn;
+    }
 #bar{
     width: auto;
     display: flex;
@@ -74,4 +81,5 @@ p{
   margin-left: 600px;
   display: flex;
   align-items: center;
+
 
