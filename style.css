@@ -54,10 +54,6 @@ marquee {
     text-align: center;
 }
 
-.cmp {
-    text-align: center;
-}
-
 .cmp img {
     margin: 15px;
     border-radius: 10px;
@@ -141,15 +137,24 @@ p {
         height: 150px;
         max-width: 80%;
     }
-
     #footer table {
         display: block;
+        width: 100%;
+    }
+
+    #footer tr {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #footer td {
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 
     .about {
-        display: block;
-        padding: 20px;
-        text-align: center;
+        padding: 10px 20px;
     }
 
     #footer img {
