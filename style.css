@@ -2,6 +2,8 @@ body {
     margin: 0;
     background-color: #ECEEDF;
     font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #111;
 }
 
 #title {
@@ -29,18 +31,22 @@ body {
     background-color: #333;
     z-index: 10;
     flex-wrap: nowrap;
+    gap: 26px;
+    padding: 0 12px;
 }
 
 .option {
     text-decoration: none;
     color: white;
-    margin: 0 25px;
+    margin: 0 12px;
     font-size: 18px;
-    transition: 0.3s;
+    transition: color .22s, transform .15s;
+    padding: 8px 6px;
 }
 
 .option:hover {
     color: #ffcc00;
+    transform: translateY(-1px);
 }
 
 marquee {
@@ -50,16 +56,36 @@ marquee {
 }
 
 #companies {
-    margin-top: 60px;
+    margin-top: 40px;
     text-align: center;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px 36px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 18px 28px;
+}
+
+.cmp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    box-sizing: border-box;
+    flex: 1 1 45%;
+    max-width: 48%;
 }
 
 .cmp img {
-    margin: 15px;
+    margin: 12px;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: transform .18s;
     width: 150px;
     height: auto;
+    display: block;
 }
 
 .cmp img:hover {
@@ -86,6 +112,7 @@ marquee {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    gap: 12px;
 }
 
 .about {
@@ -98,10 +125,12 @@ marquee {
 #footer img {
     height: 200px;
     width: auto;
+    display: inline-block;
 }
 
 p {
     font-size: medium;
+    margin: 6px 0;
 }
 
 .mail-link {
@@ -119,6 +148,33 @@ p {
 }
 
 @media (max-width: 768px) {
+    #companies {
+        margin-top: 28px;
+        padding-bottom: 24px;
+        gap: 16px 18px;
+    }
+
+    .cmp {
+        flex: 1 1 48%;
+        max-width: 48%;
+    }
+
+    .cmp img {
+        width: 135px;
+    }
+
+    #companies .cmp:last-child {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    #companies .cmp:last-child img {
+        width: 150px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border-radius: 0;
+    }
+
     #footer tr {
         flex-direction: row;
         flex-wrap: wrap;
@@ -126,14 +182,15 @@ p {
     }
 
     .about {
-        width: 32%;
+        width: 100%;
         font-size: 14px;
-        padding: 5px;
+        padding: 6px;
     }
 
     #footer img {
         height: 100px;
         width: auto;
+        margin: 6px 0;
     }
 
     p {
@@ -144,3 +201,53 @@ p {
         font-size: 14px;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1100px) {
+    .cmp { 
+        flex: 1 1 40%; 
+        max-width: 42%; 
+    }
+    .cmp img { 
+        width: 150px; 
+    }
+    #companies .cmp:last-child { 
+        flex-basis: 100%; 
+        max-width: 100%; 
+    }
+    #companies .cmp:last-child img { 
+        width: 170px; 
+        border-radius: 0; 
+        margin-top: 22px; 
+    }
+}
+
+@media (min-width: 1101px) {
+    #companies {
+        max-width: 1200px;
+        gap: 36px 40px;
+    }
+    .cmp { 
+        flex: 1 1 22%; 
+        max-width: 23%; 
+    }
+    .cmp img { 
+        width: 160px; 
+        margin: 18px; 
+    }
+    #companies .cmp:last-child { 
+        flex-basis: 100%; 
+        max-width: 100%; 
+    }
+    #companies .cmp:last-child img { 
+        width: 220px; 
+        margin-top: 36px; 
+    }
+    #footer img { 
+        height: 200px; 
+    }
+    .about { 
+        width: 30%; 
+        text-align: center; 
+    }
+}
+
