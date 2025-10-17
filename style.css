@@ -105,60 +105,40 @@ p {
 
 @media (max-width: 768px) {
     #title {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #x {
-        margin: 0 auto 10px;
-        width: 100px;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
     }
 
     #bar {
-        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
         height: auto;
-        text-align: center;
     }
 
     .option {
-        margin: 10px 0;
+        margin: 5px 15px;
         font-size: 16px;
     }
 
-    marquee img {
-        height: 100px;
-    }
-
-    #companies {
-        margin-top: 40px;
-    }
-
     .cmp img {
-        height: 150px;
-        max-width: 80%;
-    }
-    #footer table {
-        display: block;
-        width: 100%;
+        width: 100px;
+        margin: 10px;
     }
 
     #footer tr {
-        display: block;
-        margin-bottom: 30px;
-    }
-
-    #footer td {
-        display: block;
-        width: 100%;
-        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .about {
-        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
     }
 
     #footer img {
-        height: 200px;
+        height: 120px;
         width: auto;
     }
 }
