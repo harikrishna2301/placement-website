@@ -10,7 +10,7 @@ body {
     justify-content: center;
     background-color: #BBDCE5;
     padding: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 #x {
@@ -28,13 +28,13 @@ body {
     height: 50px;
     background-color: #333;
     z-index: 10;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .option {
     text-decoration: none;
     color: white;
-    margin: 0 30px;
+    margin: 0 25px;
     font-size: 18px;
     transition: 0.3s;
 }
@@ -58,7 +58,7 @@ marquee {
     margin: 15px;
     border-radius: 10px;
     transition: 0.3s;
-    max-width: 90%;
+    width: 150px;
     height: auto;
 }
 
@@ -72,17 +72,32 @@ marquee {
     font-size: 16px;
     padding: 40px 0;
     text-align: center;
+    overflow-x: hidden;
 }
 
 #footer table {
-    margin: 0 auto;
     width: 100%;
-    max-width: 1000px;
+    border-collapse: collapse;
+}
+
+#footer tr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .about {
-    padding: 20px 50px;
-    vertical-align: top;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#footer img {
+    height: 200px;
+    width: auto;
 }
 
 p {
@@ -104,41 +119,28 @@ p {
 }
 
 @media (max-width: 768px) {
-    #title {
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-    }
-
-    #bar {
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        height: auto;
-    }
-
-    .option {
-        margin: 5px 15px;
-        font-size: 16px;
-    }
-
-    .cmp img {
-        width: 100px;
-        margin: 10px;
-    }
-
     #footer tr {
-        flex-wrap: wrap;
         flex-direction: row;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .about {
-        width: 100%;
-        text-align: center;
-        padding: 20px;
+        width: 32%;
+        font-size: 14px;
+        padding: 5px;
     }
 
     #footer img {
-        height: 120px;
+        height: 100px;
         width: auto;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .mail-link {
+        font-size: 14px;
     }
 }
