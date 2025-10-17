@@ -1,62 +1,159 @@
-body{
-    margin: 0px 0px 0px 0px;
+body {
+    margin: 0;
     background-color: #ECEEDF;
+    font-family: Arial, Helvetica, sans-serif;
 }
-#title{
+
+#title {
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #BBDCE5;
+    padding: 20px;
+    flex-wrap: wrap;
 }
-#x{
-    margin-right: 430px;
+
+#x {
+    margin-right: 20px;
+    width: 120px;
+    height: auto;
 }
-.option{
-    text-decoration: none;
-    margin-top: 7px;
+
+#bar {
     display: flex;
-    margin-left: 22%;
-    font-size: larger;
-    color: white;
-}
-#bar{
-    width: auto;
-    display: flex;
-    position: sticky; 
+    justify-content: center;
+    align-items: center;
+    position: sticky;
     top: 0;
-    height: 40px;
+    height: 50px;
     background-color: #333;
+    z-index: 10;
+    flex-wrap: wrap;
 }
-marquee{
-    margin-top: 10%;
+
+.option {
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+    font-size: 18px;
+    transition: 0.3s;
 }
-.cmp{
-    margin-left: 30%;
+
+.option:hover {
+    color: #ffcc00;
 }
-#companies{
-    margin-top: 25%;
+
+marquee {
+    margin-top: 40px;
+    background-color: #f5f5f5;
+    padding: 10px;
 }
-#footer{
-    height: 450px;
+
+#companies {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.cmp {
+    text-align: center;
+}
+
+.cmp img {
+    margin: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    max-width: 90%;
+    height: auto;
+}
+
+.cmp img:hover {
+    transform: scale(1.05);
+}
+
+#footer {
     background-color: #0c2b57;
     color: white;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.about{
-    padding-right: 100px;
-    padding-left: 100px;
-    
-}
-p{
-    font-size: medium;
-}
-.mail-link:hover{
-  color: #ff6600;           /* Color when hovered */
-  text-decoration: underline;
-}
-.mail-link{
-  color: yellowgreen;
-}
-.mail:hover{
-    color:gold;
+    padding: 40px 0;
+    text-align: center;
 }
 
+#footer table {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.about {
+    padding: 20px 50px;
+    vertical-align: top;
+}
+
+p {
+    font-size: medium;
+}
+
+.mail-link {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.mail-link:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+.mail:hover {
+    color: gold;
+}
+
+@media (max-width: 768px) {
+    #title {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #x {
+        margin: 0 auto 10px;
+        width: 100px;
+    }
+
+    #bar {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .option {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    marquee img {
+        height: 100px;
+    }
+
+    #companies {
+        margin-top: 40px;
+    }
+
+    .cmp img {
+        height: 150px;
+        max-width: 80%;
+    }
+
+    #footer table {
+        display: block;
+    }
+
+    .about {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #footer img {
+        height: 200px;
+        width: auto;
+    }
+}
