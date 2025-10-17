@@ -1,160 +1,111 @@
-body {
+body{
     margin: 0px 0px 0px 0px;
     background-color: #ECEEDF;
 }
-
-#title {
+#title{
     display: flex;
+    height: 200px;
     background-color: #BBDCE5;
 }
-
-#x {
-    margin-right: 430px;
+#logo{
+    width: 25%;
 }
-
-.option {
+#name{
+    font-size: 40px;
+    font-weight: bold;
+    width: 60%;
+    text-align: center;
+}
+.option{
     text-decoration: none;
     margin-top: 7px;
     display: flex;
-    margin-left: 22%;
     font-size: larger;
     color: white;
 }
-
-#bar {
+#bar{
     width: auto;
     display: flex;
-    position: sticky;
+    position: sticky; 
+    justify-content: space-around;
     top: 0;
     height: 40px;
     background-color: #333;
 }
-
-marquee {
+marquee{
     margin-top: 10%;
 }
-
-.cmp {
-    margin-left: 30%;
+.cmp{
+    padding-top: 10%;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
 }
-
-#companies {
-    margin-top: 25%;
+#companies{
+    margin-top: 50%;
 }
-
-#footer {
+#footer{
+    padding-top:5% ;
+    display: flex;
+    justify-content: center;
     height: 450px;
     background-color: #0c2b57;
     color: white;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.about {
-    padding-right: 100px;
-    padding-left: 100px;
+.cmplogo{
+    display: flex;
+    justify-content: center;
 }
-
-p {
-    font-size: medium;
+.about{
+    font-size: 20px;
 }
-
-.mail-link:hover {
-    color: #ff6600;
-    text-decoration: underline;
+.mail-link:hover{
+  color: #ff6600;           
+  text-decoration: underline;
 }
-
-.mail-link {
-    color: yellowgreen;
+.mail-link{
+  color: yellowgreen;
 }
-
-.mail:hover {
-    color: gold;
+.mail:hover{
+    color:gold;
 }
-@media (max-width: 480px) {
-    #bar {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 16px;
-        padding: 8px 0;
-        height: auto;
+#bottomlogo{
+    height: 400px;
+}
+#logo1{
+    height: 200px;
+}
+.logo2{
+    height: 300px;
+}
+#copy{
+    text-align: center;
+}
+@media(max-width:600px){
+    .cmp{
+        font-size: 20px;
     }
-
-    .option {
-        margin: 4px 12px;
-        font-size: 16px;
+    #bottomlogo{
+        height: 130px;
     }
-
-    #title {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+    .about{
+        font-size: 7px;
     }
-
-    #x {
-        margin-right: 0;
+    .logo2{
+        height: 150px;
     }
-
-    #companies {
-        margin-top: 20%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 16px;
-        padding: 0 12px;
+    #footer{
+        height:225px;
     }
-
-    .cmp {
-        margin-left: 0;
-        flex: 1 1 48%;
-        max-width: 48%;
-        display: flex;
-        justify-content: center;
+    #logo1{
+        height: 100px;
     }
-
-    .cmp img {
-        width: 120px;
-        height: auto;
-        border-radius: 10px;
-        transition: transform 0.2s;
+    #title{
+        height: 150px;
     }
-
-    #footer {
-        height: auto;
-        padding: 20px 12px;
-        font-size: 14px;
-        text-align: center;
-        box-sizing: border-box;
-    }
-
-    .footer-inner {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: nowrap;
-        gap: 8px;
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    .about,
-    .right-contact,
-    .center-logo {
-        width: 33.33%;
-        padding: 4px;
-        box-sizing: border-box;
-        text-align: center;
-    }
-
-    .footer-inner p {
-        font-size: 12.5px;
-    }
-
-    p {
-        font-size: 13px;
+    #name{
+        font-size: 20px;
     }
 }
